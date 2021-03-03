@@ -69,9 +69,27 @@ console.log('##### Challenge 6 #####');
 // For the string 'Whoa, I am the best!', console out the letters individually,
 // but also capitalize the letters in the third word.
 let string6 = 'Whoa, I am the best!';
-for (const l of string6){
-    console.log(l)
+//original, does not capitalize AM
+// for (const l of string6){
+//     console.log(l)
+// }
+let arrOfStr = string6.split(" ")
+console.log("String 6 into Array:", arrOfStr)
+let thirdArr = []
+for (const word of arrOfStr){
+    if (word === arrOfStr[2] ){
+        thirdArr.push(word.toUpperCase())
+    } else {
+        thirdArr.push(word)
+    }
+
 }
+console.log("After we identified 3rd word:", thirdArr)
+let fourthArr = thirdArr.join(" ")
+console.log("Joined back into one Array:", fourthArr)
+for (const l of fourthArr){
+        console.log(l)
+    }
 
 
 console.log('##### Challenge 7 #####');
