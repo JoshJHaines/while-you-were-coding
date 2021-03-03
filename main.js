@@ -98,14 +98,20 @@ const names = 'Alex|Mesuara|Brian|Chanel|Matt|Jeremy B.|Jose|Andy|Dustin|Joshua|
 // You'll know you're at a new person's name when you hit the pipe character.
 
 // Don't print the pipes!
-let students = []
-for(const char of names){
-    students.push(names.split("|"))
+// let students = []
+// for(const char of names){
+//     students.push(names.split("|"))
+// }
+// for (const student of students){
+//     console.log('Here today is:', student)
+// }
+console.log("Here today is:")
+for (const char of names){
+    if (char === "|"){
+        console.log("Here today is:")
+    } else {
+        console.log(char)
+    }
 }
-for (const student of students){
-    console.log('Here today is:', student)
-}
-
-
 
 
