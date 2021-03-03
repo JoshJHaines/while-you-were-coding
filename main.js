@@ -74,7 +74,7 @@ let string6 = 'Whoa, I am the best!';
 //     console.log(l)
 // }
 let arrOfStr = string6.split(" ")
-console.log("String 6 into Array:", arrOfStr)
+console.log("String 6 SPLIT into Array of Strings:", arrOfStr)
 let thirdArr = []
 for (const word of arrOfStr){
     if (word === arrOfStr[2] ){
@@ -82,7 +82,6 @@ for (const word of arrOfStr){
     } else {
         thirdArr.push(word)
     }
-
 }
 console.log("After we identified 3rd word:", thirdArr)
 let fourthArr = thirdArr.join(" ")
