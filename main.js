@@ -69,7 +69,9 @@ console.log('##### Challenge 6 #####');
 // For the string 'Whoa, I am the best!', console out the letters individually,
 // but also capitalize the letters in the third word.
 let string6 = 'Whoa, I am the best!';
-
+for (const l of string6){
+    console.log(l)
+}
 
 
 console.log('##### Challenge 7 #####');
